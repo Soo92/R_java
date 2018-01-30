@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<script src="resources/wordcloud2/htmlwidgets-0.8/htmlwidgets.js"></script>
+<link href="resources/wordcloud2/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
+<script src="resources/wordcloud2/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="resources/wordcloud2/wordcloud2-0.0.1/hover.js"></script>
+<script src="resources/wordcloud2/wordcloud2-binding-0.2.0/wordcloud2.js"></script>
+</head>
+<body style="background-color:white;">
+<button id="b">바꿔</button>
+<div id="output">
+<div id="htmlwidget-c30e333dda81d1a98a40" style="width:960px;height:500px;" class="wordcloud2 html-widget"></div>
+
+</div>
+<div id="js">
+<script type="application/json" data-for="htmlwidget-c30e333dda81d1a98a40">{"x":{"word":["교육","안녕","ddd2","abc","예제","샘플"],"freq":[20,17.6,16.72,15.84,14.96,14.08],"fontFamily":"나눔고딕","fontWeight":"bold","color":["#ff8000","#ffb366","#ffcc66","#ffdd99","#ffe6b3","#ff8000"],"minSize":10,"weightFactor":1.8,"backgroundColor":"white","gridSize":0,"minRotation":-0.523598775598299,"maxRotation":-0.523598775598299,"shuffle":true,"rotateRatio":1,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":[]}</script>
+</div>
+<script>
+var dom1 = document.getElementById("b");
+var dom2 = document.getElementById("output");
+var dom3 = document.getElementById("js");
+dom1.onclick = function() {           
+	dom2.innerHTML = '<div id="htmlwidget-4a129e0956080fc0f120" style="width:960px;height:500px;" class="wordcloud2 html-widget"></div>';
+	dom3.innerHTML= window.prompt();
+    window.HTMLWidgets.staticRender();
+};
+</script>
+</body>
+</html>
